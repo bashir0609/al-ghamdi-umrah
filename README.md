@@ -1,25 +1,15 @@
-# Al Ghamdi Umrah (Astro static site)
+# Al Ghamdi Umrah (Astro static website)
 
-Exact design preservation of the supplied standalone HTML. No CMS, database, login, or backend.
+English home: `/`. Arabic home: `/ar/`.
 
-## Run locally
-
-Requires Node.js 20.3+ and npm with network access:
+## Run
 
 ```bash
 npm install
 npm run dev
+npm run build
 ```
 
-Visit http://localhost:4321. Production build: `npm run build`. Upload generated `dist/` to any static host.
+The original English page, styles, imagery and WhatsApp form are preserved. The Arabic page uses the same markup and images, translated content and dedicated RTL style overrides. Both are static Astro pages. No account, CMS, database, or API.
 
-## Source files
-
-- `src/pages/index.astro`: actual Astro page containing original HTML markup, not an injected HTML document.
-- `public/styles/original.css`: extracted original CSS, unchanged. Includes original embedded hero background image.
-- `public/scripts/original.js`: extracted original WhatsApp enquiry script, unchanged.
-- `reference/original.html`: exact original file for comparison.
-
-Important: The reference form asks for Iqama and includes it in WhatsApp message text. This was retained solely because the requested behavior must be identical. Review the privacy implications before publishing.
-
-No new features or styling changes were made. The Google Fonts stylesheet loads from Google when connected to the internet.
+Note: The original enquiry form includes an Iqama number field and sends it to WhatsApp. This has been preserved at the owner's request; review whether collecting identity numbers is necessary before commercial use.

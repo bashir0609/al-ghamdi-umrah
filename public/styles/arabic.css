@@ -1,0 +1,15 @@
+/* Only the language switcher affects the English page. */
+.lang-switch{color:var(--onGreen);font:600 .86rem Inter,system-ui,sans-serif;border:1px solid rgba(244,241,230,.45);padding:5px 10px;border-radius:999px;white-space:nowrap;text-decoration:none}
+.lang-switch:hover,.lang-switch:focus-visible{border-color:var(--gold);color:var(--gold)}
+@media(max-width:760px){header .wrap{gap:10px}header .logo{font-size:1.05rem}header .btn{padding:8px 11px!important;font-size:.79rem!important}.lang-switch{padding:4px 8px;font-size:.77rem}}
+/* Arabic page: preserve colors and component sizes; use native RTL flow. */
+html[lang="ar"] body{font-family:"Noto Sans Arabic",Tahoma,Arial,sans-serif;text-align:right}
+html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3,html[lang="ar"] h4{font-family:"Noto Naskh Arabic","Noto Sans Arabic",Tahoma,serif;line-height:1.4}
+html[lang="ar"] .logo{font-family:"Cormorant Garamond",serif;direction:ltr}
+html[lang="ar"] .hero svg{right:auto;left:-80px}
+html[lang="ar"] .enq input,html[lang="ar"] .enq textarea,html[lang="ar"] .enq select{text-align:right;font-family:inherit}
+html[lang="ar"] .enq input[type="date"]{direction:ltr;text-align:right}
+html[lang="ar"] .enq button{font-family:inherit}
+html[lang="ar"] .wa{right:auto;left:18px}
+html[lang="ar"] .route span{unicode-bidi:plaintext}
+html[lang="ar"] .price{direction:rtl}
