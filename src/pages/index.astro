@@ -1,0 +1,7 @@
+---
+// Build-time import of the original self-contained HTML.
+// This guarantees the exact styling, imagery, content, and JavaScript are retained.
+import { readFileSync } from 'node:fs';
+const originalHtml = readFileSync(new URL('../reference/original.html', import.meta.url), 'utf8');
+---
+<Fragment set:html={originalHtml} />
