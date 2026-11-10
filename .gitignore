@@ -1,9 +1,10 @@
+
 node_modules/
 dist/
 .astro/
+.vercel/
 .env
-<<<<<<< HEAD
-=======
 .env.*
 !.env.example
->>>>>>> origin/main
+*.log
+.DS_Store
